@@ -1,0 +1,57 @@
+
+<!-- saved from url=(0086)https://www.pythonanywhere.com/user/acardenaso/files/home/acardenaso/mysite/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style>
+    body{
+        text-align: center;
+    }
+     h1 {
+         overflow: hidden;
+         width: 100%;
+         text-align: center;
+         background-color: #4285f4;
+         color: #FFFFFF;
+         top: 0px;
+     }
+
+     p{
+         text-justify: auto;
+         padding: 1%;
+     }
+
+     button{
+         color: #FFFFFF;
+         background-color:#ea4335;
+
+     }
+    </style>
+
+
+</head>
+
+<body>
+<h1> Números triangulares </h1>
+  <title> Números triangulares </title>
+
+  <p>
+      Un número triangular cuenta objetos dispuestos en un triángulo equilátero. El n-ésimo número triangular es el número de puntos en la disposición triangular con n puntos en un lado, y es igual a la suma de los n números naturales de 1 a n, siendo por convención, el 1 el primer número triangular. Los números triangulares, junto con otros números figurados, fueron objeto de estudio por Pitágoras y los Pitagóricos, quienes consideraban sagrado el 10 escrito en forma triangular, y al que llamaban Tetraktys.
+  </p>
+
+
+
+  <p>
+      Cada número triangular Tn está definido por la siguiente fórmula:
+  </p>
+<img src="./Números triangulares_files/formula.png" alt="Formula - Número triangular">
+
+ <h2> Generar números triangulares: </h2>
+  <form method="POST">
+    <label> i-ésimo número triangular: </label>
+    <input type="text" name="textbox" value="{{user_text" |="" safe}}="">  <br>
+    <label> Valor: </label>
+    <label> {{output | safe}} </label> <br>
+    <button type="submit" name="submit">Generar</button>
+  </form>
+
+    <a target="_blank" href="https://es.wikipedia.org/wiki/N%C3%BAmero_triangular">REFERENCIA</a>
+</body></html>
